@@ -2,7 +2,7 @@ services:
   - type: web
     name: http-proxy
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
     plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
     envVars: []
